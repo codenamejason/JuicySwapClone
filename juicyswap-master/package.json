@@ -13,6 +13,7 @@
     "babel-preset-stage-3": "6.24.1",
     "babel-register": "6.26.0",
     "dotenv": "6.2.0",
+    "scrypt": "github:barrysteyn/node-scrypt#fb60a8d3c158fe115a624b5ffa7480f3a24b03fb",
     "truffle": "^5.1.41",
     "truffle-flattener": "^1.4.4",
     "truffle-hdwallet-provider-privkey": "1.0.3",

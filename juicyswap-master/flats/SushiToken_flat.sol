@@ -1,4 +1,4 @@
-// File: @openzeppelin/contracts/GSN/Context.sol
+// File: node_modules\@openzeppelin\contracts\GSN\Context.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -25,7 +25,7 @@ abstract contract Context {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/IERC20.sol
+// File: node_modules\@openzeppelin\contracts\token\ERC20\IERC20.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -105,7 +105,7 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: @openzeppelin/contracts/math/SafeMath.sol
+// File: node_modules\@openzeppelin\contracts\math\SafeMath.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -267,7 +267,7 @@ library SafeMath {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Address.sol
+// File: node_modules\@openzeppelin\contracts\utils\Address.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -411,7 +411,7 @@ library Address {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/ERC20.sol
+// File: @openzeppelin\contracts\token\ERC20\ERC20.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -720,7 +720,7 @@ contract ERC20 is Context, IERC20 {
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
 }
 
-// File: @openzeppelin/contracts/access/Ownable.sol
+// File: @openzeppelin\contracts\access\Ownable.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -790,10 +790,9 @@ contract Ownable is Context {
     }
 }
 
-// File: contracts/SushiToken.sol
+// File: contracts\SushiToken.sol
 
 pragma solidity 0.6.12;
-
 
 
 

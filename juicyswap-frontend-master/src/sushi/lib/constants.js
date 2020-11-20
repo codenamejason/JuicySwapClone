@@ -462,10 +462,10 @@ export const CHAIN_ID = 4
 
 export const contractAddresses = {
   sushi: {
-    4: '0xecD246d5Dac3Cd49DfA0144Aea1439a4C4074B64',
+    4: '0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
   },
   masterChef: {
-    4: '0x4533060563B89c986d8f838f503c6bD2C9F383E7',
+    4: '0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
   },
   weth: {
     4: '0xc778417e063141139fce010982780140aa0cd5ab',
@@ -484,12 +484,25 @@ export const supportedPools = [
       4: '0x03e6c12ef405ac3f642b9184eded8e1322de1a9e', // LP Token Address
     },
     tokenAddresses: {
-      4: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2', // Token, i.e. "DAI"
+      4: '0x5592ec0cfb4dbc12d3ab100b257153436a1f0fea', // Token, i.e. "DAI"
     },
     name: 'Juice Party!',
     symbol: 'DAI-ETH LP',
     tokenSymbol: 'DAI',
     icon: '🍊',
+  },
+  {
+    pid: 1,
+    lpAddresses: {
+      4: '0x5308a481b2b65f6086083d2268acb73aadc757e0', // LP Token Address
+    },
+    tokenAddresses: {
+      4: '0xd9ba894e0097f8cc2bbc9d24d308b98e36dc6d02', // Token, i.e. "USDT"
+    },
+    name: 'Dolphin Dollars',
+    symbol: 'USDT-ETH LP',
+    tokenSymbol: 'USDT',
+    icon: '🐋',
   },
 ]
 
