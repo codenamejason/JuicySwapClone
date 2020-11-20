@@ -28,7 +28,7 @@ const FarmCards: React.FC = () => {
   const stakedValue = useAllStakedValue()
 
   const sushiIndex = farms.findIndex(
-    ({ tokenSymbol }) => tokenSymbol === 'SUSHI',
+    ({ tokenSymbol }) => tokenSymbol === 'SUSHI', // 'CIPHER'
   )
 
   console.log(stakedValue);
@@ -80,7 +80,7 @@ const FarmCards: React.FC = () => {
         ))
       ) : (
         <StyledLoadingWrapper>
-          <Loader text="Cooking the rice ..." />
+          <Loader text="decoding the cipher ..." />
         </StyledLoadingWrapper>
       )}
     </StyledCards>

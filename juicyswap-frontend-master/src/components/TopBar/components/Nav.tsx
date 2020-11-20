@@ -11,12 +11,12 @@ const Nav: React.FC = () => {
       <StyledLink exact activeClassName="active" to="/farms">
         Menu
       </StyledLink>
-      <StyledAbsoluteLink
+      {/* <StyledAbsoluteLink
         href="#"
         target="_blank"
       >
         About
-      </StyledAbsoluteLink>
+      </StyledAbsoluteLink> */}
     </StyledNav>
   )
 }

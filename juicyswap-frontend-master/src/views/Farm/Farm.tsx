@@ -78,12 +78,12 @@ const Farm: React.FC = () => {
         <Spacer size="lg" />
         <StyledInfo>
           ⭐️ Every time you stake and unstake LP tokens, the contract will
-          automagically harvest JUICY rewards for you!
+          automatically harvest CIPHER rewards for you!
         </StyledInfo>
         <Spacer size="md" />
         <StyledLink
           target="__blank"
-          href={`https://sushiswap.vision/pair/${lpTokenAddress}`}
+          href={`https://info.uniswap.org/pairs/${lpTokenAddress}`}
         >
           {lpTokenName} Info
         </StyledLink>

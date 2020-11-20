@@ -486,7 +486,7 @@ export const supportedPools = [
     tokenAddresses: {
       4: '0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa', // Token, i.e. "DAI"
     },
-    name: 'Juice Party!',
+    name: 'Don\'t Dai',
     symbol: 'DAI-ETH LP',
     tokenSymbol: 'DAI',
     icon: '🍊',
@@ -499,7 +499,7 @@ export const supportedPools = [
     tokenAddresses: {
       4: '0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02', // Token, i.e. "USDT"
     },
-    name: 'Dolphin Dollars',
+    name: 'Whales Only',
     symbol: 'USDT-ETH LP',
     tokenSymbol: 'USDT',
     icon: '🐋',
