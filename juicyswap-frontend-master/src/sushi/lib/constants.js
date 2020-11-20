@@ -468,10 +468,10 @@ export const contractAddresses = {
     4: '0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
   },
   weth: {
-    4: '0xc778417e063141139fce010982780140aa0cd5ab',
+    4: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
   },
   xSushi: {
-    4: '0x8798249c2e607446efb7ad49ec89dd1865ff4272' // NOTE: Not in use
+    4: '0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272' // NOTE: Not in use
   }
 }
 
@@ -481,10 +481,10 @@ export const supportedPools = [
   {
     pid: 0,
     lpAddresses: {
-      4: '0x03e6c12ef405ac3f642b9184eded8e1322de1a9e', // LP Token Address
+      4: '0x03E6c12eF405AC3F642B9184eDed8E1322de1a9e', // LP Token Address
     },
     tokenAddresses: {
-      4: '0x5592ec0cfb4dbc12d3ab100b257153436a1f0fea', // Token, i.e. "DAI"
+      4: '0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa', // Token, i.e. "DAI"
     },
     name: 'Juice Party!',
     symbol: 'DAI-ETH LP',
@@ -494,16 +494,29 @@ export const supportedPools = [
   {
     pid: 1,
     lpAddresses: {
-      4: '0x5308a481b2b65f6086083d2268acb73aadc757e0', // LP Token Address
+      4: '0x5308a481B2b65F6086083D2268acb73AADC757E0', // LP Token Address
     },
     tokenAddresses: {
-      4: '0xd9ba894e0097f8cc2bbc9d24d308b98e36dc6d02', // Token, i.e. "USDT"
+      4: '0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02', // Token, i.e. "USDT"
     },
     name: 'Dolphin Dollars',
     symbol: 'USDT-ETH LP',
     tokenSymbol: 'USDT',
     icon: '🐋',
   },
+  {
+      pid: 2,
+      lpAddresses: {
+        4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', //change this
+      },
+      tokenAddresses: {
+        4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
+      },
+      name: 'Unicorn At Play',
+      symbol: 'UNI-ETH SLP',
+      tokenSymbol: 'UNI',
+      icon: '🦄',
+    },
 ]
 
 
