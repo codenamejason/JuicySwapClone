@@ -21,6 +21,17 @@ module.exports = {
       gas: 5000000,
       gasPrice: 25000000000,
       network_id: 4
+    },
+    main: {
+      provider: function() {
+        return new HDWalletProvider(
+          privateKeys.split(','),
+          `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`
+        )
+      },
+      gas: 5000000,
+      gasPrice: 25000000000,
+      network_id: 1
     }
   },
   plugins: [

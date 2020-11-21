@@ -460,11 +460,26 @@ SLP Address on mainnet for reference
 
 export const CHAIN_ID = 4
 
+// export const contractAddresses = {
+//   sushi: {
+//     4: '0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
+//   },
+//   masterChef: {
+//     4: '0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
+//   },
+//   weth: {
+//     4: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
+//   },
+//   xSushi: {
+//     4: '0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272' // NOTE: Not in use
+//   }
+// }
+
 export const contractAddresses = {
-  sushi: {
+  cipher: {
     4: '0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
   },
-  masterChef: {
+  masterKey: {
     4: '0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
   },
   weth: {
@@ -520,10 +535,10 @@ export const supportedPools = [
     {
       pid: 3,
       lpAddresses: {
-        4: '0x0d1e5112b7bf0595837f6e19a8233e8b918ef3aa',
+        4: '0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA',
       },
       tokenAddresses: {
-        4: '0x01be23585060835e02b77ef475b0cc51aa1e0709',
+        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709',
       },
       name: 'Link Marines',
       symbol: 'LINK-ETH LP',
