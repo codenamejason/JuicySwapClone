@@ -1,6 +1,5 @@
 pragma solidity 0.6.12;
 
-
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "@openzeppelin/contracts/utils/EnumerableSet.sol";
@@ -67,7 +66,7 @@ contract MasterChef is Ownable {
     // SUSHI tokens created per block.
     uint256 public sushiPerBlock;
     // Bonus muliplier for early sushi makers.
-    uint256 public constant BONUS_MULTIPLIER = 10;
+    uint256 public constant BONUS_MULTIPLIER = 5; // 500
     // The migrator contract. It has a lot of power. Can only be set through governance (owner).
     IMigratorChef public migrator;
 
