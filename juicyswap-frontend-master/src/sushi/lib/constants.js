@@ -456,7 +456,7 @@ SLP Address on mainnet for reference
 
 
 
-// JUICYSWAP SETTINGS
+// CIPHERSWAP SETTINGS
 
 export const CHAIN_ID = 4
 
@@ -489,7 +489,7 @@ export const supportedPools = [
     name: 'Don\'t Dai',
     symbol: 'DAI-ETH LP',
     tokenSymbol: 'DAI',
-    icon: '🍊',
+    icon: '🐱‍👤',
   },
   {
     pid: 1,
@@ -517,6 +517,19 @@ export const supportedPools = [
       tokenSymbol: 'UNI',
       icon: '🦄',
     },
+    {
+      pid: 3,
+      lpAddresses: {
+        4: '0x0d1e5112b7bf0595837f6e19a8233e8b918ef3aa',
+      },
+      tokenAddresses: {
+        4: '0x01be23585060835e02b77ef475b0cc51aa1e0709',
+      },
+      name: 'Link Marines',
+      symbol: 'LINK-ETH LP',
+      tokenSymbol: 'LINK',
+      icon: '🐱‍🐉',
+    }
 ]
 
 

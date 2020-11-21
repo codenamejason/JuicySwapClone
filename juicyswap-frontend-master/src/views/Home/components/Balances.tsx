@@ -94,7 +94,7 @@ const Balances: React.FC = () => {
               <SushiIcon />
               <Spacer />
               <div style={{ flex: 1 }}>
-                <Label text="Your JUICY Balance" />
+                <Label text="Your CIPHER Balance" />
                 <Value
                   value={!!account ? getBalanceNumber(sushiBalance) : 'Locked'}
                 />
