@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
     <StyledLogo to="/">
       <img src={logo} height="32" style={{ marginTop: -4 }} />
       <StyledText>
-        Raw Cipher
+        Raw Cipher 
       </StyledText>
     </StyledLogo>
   )

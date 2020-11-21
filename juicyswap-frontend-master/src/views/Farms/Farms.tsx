@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import logo from '../../assets/img/logo.png'
+import logo from '../../assets/img/cipher-logo.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'

@@ -165,7 +165,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
                       .slice(0, -1)}%`
                   : 'Loading ...'}
               </span>
-              {/* <span>
+              <span>
                 {farm.tokenAmount
                   ? (farm.tokenAmount.toNumber() || 0).toLocaleString('en-US')
                   : '-'}{' '}
@@ -176,7 +176,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
                   ? (farm.wethAmount.toNumber() || 0).toLocaleString('en-US')
                   : '-'}{' '}
                 ETH
-              </span> */}
+              </span>
             </StyledInsight>
           </StyledContent>
         </CardContent>
