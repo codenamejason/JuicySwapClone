@@ -4,7 +4,8 @@
 truffle migrate --reset --network rinkeby
 
 # Verify Contracts on Etherscan
-truffle run verify SushiToken --network rinkeby --license SPDX-License-Identifier
+truffle run verify CipherToken --network rinkeby --license SPDX-License-Identifier
+#truffle run verify SushiToken --network rinkeby --license SPDX-License-Identifier
 truffle run verify MasterChef --network rinkeby --license SPDX-License-Identifier
 
 # Flatten Contracts
