@@ -561,5 +561,4 @@ export const supportedPools = [
     }
 ]
 
-
 // 0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86
