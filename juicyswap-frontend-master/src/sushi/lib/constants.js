@@ -558,6 +558,19 @@ export const supportedPools = [
       symbol: 'CIPHER-ETH LP',
       tokenSymbol: 'CIPHER',
       icon: '🍇',
+    },
+    {
+      pid: 5,
+      lpAddresses: {
+        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
+      },
+      tokenAddresses: {
+        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
+      },
+      name: 'CyberPunk 77',
+      symbol: 'LINK',
+      tokenSymbol: 'LINK',
+      icon: '🏍',
     }
 ]
 
