@@ -54,7 +54,6 @@ export const addressMap = {
 //   }
 // }
 
-
 /*
 SLP Address on mainnet for reference
 ==========================================
@@ -457,31 +456,33 @@ SLP Address on mainnet for reference
 
 
 
-// CIPHERSWAP SETTINGS
+// RAW CIPHER SETTINGS
+/*
+SLP Address on mainnet for reference
+==========================================
+0  USDT 0x5308a481B2b65F6086083D2268acb73AADC757E0
+XX 1  USDC 0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc
+2  DAI  0x03E6c12eF405AC3F642B9184eDed8E1322de1a9e
+XX 3  sUSD 0xf80758aB42C3B07dA84053Fd88804bCB6BAA4b5c
+XX 4  COMP 0xCFfDdeD873554F362Ac02f8Fb1f02E5ada10516f
+XX 5  LEND 0xaB3F9bF1D81ddb224a2014e98B238638824bCf20
+XX 6  SNX  0x43AE24960e5534731Fc831386c07755A2dc33D47
+7  UNI  0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5
+8  LINK 0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA
+XX 9  BAND 0xf421c3f2e695C2D4C0765379cCace8adE4a480D9
+XX 10 AMPL 0xc5be99A02C6857f9Eac67BbCE58DF5572498F40c
+XX 11 YFI  0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28
+XX 12 SUSHI 0xCE84867c3c02B05dc570d0135103d3fB9CC19433
+*/
 
 export const CHAIN_ID = 4
 
-// export const contractAddresses = {
-//   sushi: {
-//     4: '0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
-//   },
-//   masterChef: {
-//     4: '0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
-//   },
-//   weth: {
-//     4: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-//   },
-//   xSushi: {
-//     4: '0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272' // NOTE: Not in use
-//   }
-// }
-
 export const contractAddresses = {
   cipher: {
-    4: '0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
+    4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB',//'0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
   },
   masterKey: {
-    4: '0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
+    4: '0x4b8522e17f703328C1B5283e3949aE377e71bC5F',//'0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
   },
   weth: {
     4: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
@@ -523,7 +524,7 @@ export const supportedPools = [
   {
       pid: 2,
       lpAddresses: {
-        4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', //change this
+        4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', //
       },
       tokenAddresses: {
         4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',

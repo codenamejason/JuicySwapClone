@@ -1,15 +1,15 @@
-const SushiToken = artifacts.require('SushiToken.sol')
+const CipherToken = artifacts.require('CipherToken.sol')
 const MasterChef = artifacts.require('MasterChef.sol')
 
 module.exports = async function(deployer) {
   // Deploy Sushi Token
-  await deployer.deploy(SushiToken)
-  const sushiToken = await SushiToken.deployed()
+  await deployer.deploy(CipherToken)
+  const cipherToken = await CipherToken.deployed()
 
   // Deploy Masterchef Contract
   await deployer.deploy(
     MasterChef,
-    sushiToken.address,
+    cipherToken.address,
     process.env.DEV_ADDRESS, // Your address where you get sushi tokens - should be a multisig
     web3.utils.toWei(process.env.TOKENS_PER_BLOCK), // Number of tokens rewarded per block, e.g., 100
     process.env.START_BLOCK, // Block number when token mining starts
@@ -18,7 +18,7 @@ module.exports = async function(deployer) {
 
   // Make Masterchef contract token owner
   const masterChef = await MasterChef.deployed()
-  await sushiToken.transferOwnership(masterChef.address)
+  await cipherToken.transferOwnership(masterChef.address)
 
   // Add Liquidity pool for rewards, e.g., "ETH/DAI Pool"
   await masterChef.add(
