@@ -553,7 +553,7 @@ export const supportedPools = [
         4: '0x20d7ced3b9e21d40c98b48ba34b834bffa4bab6a', // LP Token
       },
       tokenAddresses: {
-        4: '0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86', // Token
+        4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB', // Token
       },
       name: 'Grape Ape',
       symbol: 'CIPHER-ETH LP',
@@ -563,14 +563,14 @@ export const supportedPools = [
     {
       pid: 5,
       lpAddresses: {
-        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
+        4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB', // Token
       },
       tokenAddresses: {
-        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
+        4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB', // Token
       },
       name: 'CyberPunk 77',
-      symbol: 'LINK',
-      tokenSymbol: 'LINK',
+      symbol: 'CIPHER',
+      tokenSymbol: 'CIPHER',
       icon: '🏍',
     }
 ]
