@@ -91,7 +91,7 @@ const Balances: React.FC = () => {
         <CardContent>
           <StyledBalances>
             <StyledBalance>
-              <SushiIcon />
+              {/* <SushiIcon /> */}
               <Spacer />
               <div style={{ flex: 1 }}>
                 <Label text="Your CIPHER Balance" />

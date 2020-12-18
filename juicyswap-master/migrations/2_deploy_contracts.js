@@ -1,10 +1,18 @@
 const CipherToken = artifacts.require('CipherToken.sol')
 const MasterChef = artifacts.require('MasterChef.sol')
+//const GovernerAlpha = artifacts.require('GovernerAlpha.sol')
 
 module.exports = async function(deployer) {
   // Deploy Sushi Token
   await deployer.deploy(CipherToken)
   const cipherToken = await CipherToken.deployed()
+
+  // await deployer.deploy(
+  //   GovernerAlpha,
+  //   'timelock',
+  //   cipherToken.address,
+  //   'guardian address here'
+  // )
 
   // Deploy Masterchef Contract
   await deployer.deploy(
@@ -28,4 +36,13 @@ module.exports = async function(deployer) {
   )
 
   // Add more liquidity pools here upon deployment, or add them later manually
+  // await masterChef.add(
+  //   process.env.ALLOCATION_POINT,
+  //   '', // lp token address for each pool you want to add
+  //   true
+  // )
+
+
+
+
 }

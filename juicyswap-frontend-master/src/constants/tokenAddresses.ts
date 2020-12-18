@@ -1,4 +1,5 @@
 export const sushi = '0x0e2298E3B3390e3b945a5456fBf59eCc3f55DA16'
+export const cipher = '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB'
 export const sushiv2 = '0xAba8cAc6866B83Ae4eec97DD07ED254282f6aD8A'
-export const sushiAddress = '0x43a7903E3a839a67192151eE300e11198985E54b'
-export const masterChefAddress = '0x245A074cA9814fB46A21562bC70fAB92F8A3F779'
+export const sushiAddress = '0x0e2298E3B3390e3b945a5456fBf59eCc3f55DA16'
+export const masterChefAddress = '0xf30dEe4456FD083c56aED09D76777dd430801D94'

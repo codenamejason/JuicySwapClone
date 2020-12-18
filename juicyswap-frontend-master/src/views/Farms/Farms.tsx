@@ -28,8 +28,8 @@ const Farms: React.FC = () => {
               <PageHeader
                 icon={<img src={logo} height="120" />}
                 subtitle="Earn CIPHER tokens by staking Uniswap LP Tokens. 
-                Note: Current APY does not include 2/3rd CIPHER emission that is 
-                locked and will be retroactively disbursed at a later date."
+                Note: The smart contracts have not been audited and please ask that
+                you use at your own risk."
                 title="Select Your Favorite Ciphers"
               />
               <FarmCards />
