@@ -103,7 +103,7 @@ const StyledFarm = styled.div`
 
 const StyledCardsWrapper = styled.div`
   display: flex;
-  width: 600px;
+  width: 500px;
   @media (max-width: 768px) {
     width: 100%;
     flex-flow: column nowrap;

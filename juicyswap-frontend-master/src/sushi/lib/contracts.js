@@ -25,7 +25,9 @@ export class Contracts {
     this.defaultGasPrice = options.defaultGasPrice
 
     this.sushi = new this.web3.eth.Contract(SushiAbi)
+    //this.cipher = new this.web3.eth.Contract(CipherAbi)
     this.masterChef = new this.web3.eth.Contract(MasterChefAbi)
+    //this.masterKey = new this.web3.eth.Contract(MasterKeyAbi)
     this.xSushiStaking = new this.web3.eth.Contract(XSushiAbi)
     this.weth = new this.web3.eth.Contract(WETHAbi)
 

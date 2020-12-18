@@ -34,9 +34,9 @@ export const getXSushiStakingContract = (sushi) => {
   return sushi && sushi.contracts && sushi.contracts.xSushiStaking
 }
 
-export const getFarms = (sushi) => {
-  return sushi
-    ? sushi.contracts.pools.map(
+export const getFarms = (cipher) => {
+  return cipher
+    ? cipher.contracts.pools.map(
         ({
           pid,
           name,
@@ -58,7 +58,7 @@ export const getFarms = (sushi) => {
           tokenSymbol,
           tokenContract,
           earnToken: 'CIPHER',
-          earnTokenAddress: sushi.contracts.sushi.options.address,
+          earnTokenAddress: cipher.contracts.sushi.options.address,
           icon,
         }),
       )
@@ -74,7 +74,7 @@ export const getPoolWeight = async (masterChefContract, pid) => {
 }
 
 export const getEarned = async (masterChefContract, pid, account) => {
-  return masterChefContract.methods.pendingSushi(pid, account).call()
+  return masterChefContract.methods.pendingCipher(pid, account).call()
 }
 
 export const getTotalLPWethValue = async (
