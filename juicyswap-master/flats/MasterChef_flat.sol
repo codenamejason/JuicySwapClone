@@ -1361,7 +1361,7 @@ pragma solidity 0.6.12;
 
 
 
-// SushiToken with Governance.
+// CipherToken with Governance.
 contract CipherToken is ERC20("CipherToken", "CIPHER"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {

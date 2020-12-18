@@ -479,10 +479,10 @@ export const CHAIN_ID = 4
 
 export const contractAddresses = {
   cipher: {
-    4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB',//'0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
+    4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB',//'0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86',
   },
   masterKey: {
-    4: '0x4b8522e17f703328C1B5283e3949aE377e71bC5F',//'0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
+    4: '0xf30dEe4456FD083c56aED09D76777dd430801D94',//'0xf51CDD02817d24d3fBCA543F4af5064582580f0E',
   },
   weth: {
     4: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
@@ -524,10 +524,10 @@ export const supportedPools = [
   {
       pid: 2,
       lpAddresses: {
-        4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', //
+        4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', // LP Token
       },
       tokenAddresses: {
-        4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
+        4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', // Token
       },
       name: 'Unicorn At Play',
       symbol: 'UNI-ETH SLP',
@@ -537,10 +537,10 @@ export const supportedPools = [
     {
       pid: 3,
       lpAddresses: {
-        4: '0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA',
+        4: '0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA',// LP Token
       },
       tokenAddresses: {
-        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709',
+        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
       },
       name: 'Link Marines',
       symbol: 'LINK-ETH LP',
@@ -550,29 +550,29 @@ export const supportedPools = [
     {
       pid: 4,
       lpAddresses: {
-        4: '0x20d7ced3b9e21d40c98b48ba34b834bffa4bab6a', // LP Token
+        4: '0x4bf35e6d954c9b86cdfa38e023238ce8c31d8cb4', // LP Token
       },
       tokenAddresses: {
-        4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB', // Token
+        4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
       },
       name: 'Grape Ape',
       symbol: 'CIPHER-ETH LP',
       tokenSymbol: 'CIPHER',
       icon: '🍇',
     },
-    {
-      pid: 5,
-      lpAddresses: {
-        4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB', // Token
-      },
-      tokenAddresses: {
-        4: '0x6c62e6Cac21d5d0aB432236d28D6f368C23a96cB', // Token
-      },
-      name: 'CyberPunk 77',
-      symbol: 'CIPHER',
-      tokenSymbol: 'CIPHER',
-      icon: '🏍',
-    }
+    // {
+    //   pid: 5,
+    //   lpAddresses: {
+    //     4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
+    //   },
+    //   tokenAddresses: {
+    //     4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
+    //   },
+    //   name: 'CyberPunk 77',
+    //   symbol: 'CIPHER',
+    //   tokenSymbol: 'CIPHER',
+    //   icon: '🏍',
+    // }
 ]
 
 // 0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86
