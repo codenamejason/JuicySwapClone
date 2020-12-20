@@ -4,7 +4,7 @@ import MasterChefAbi from './abi/masterchef.json'
 import XSushiAbi from './abi/xsushi.json'
 import SushiAbi from './abi/sushi.json'
 import CipherAbi from './abi/cipher.json'
-import MasterKey from './abi/masterkey.json'
+import MasterKeyAbi from './abi/masterkey.json'
 import UNIV2PairAbi from './abi/uni_v2_lp.json'
 import WETHAbi from './abi/weth.json'
 import {
@@ -24,7 +24,7 @@ export class Contracts {
     this.defaultGas = options.defaultGas
     this.defaultGasPrice = options.defaultGasPrice
 
-    this.sushi = new this.web3.eth.Contract(SushiAbi)
+    this.sushi = new this.web3.eth.Contract(CipherAbi)
     //this.cipher = new this.web3.eth.Contract(CipherAbi)
     this.masterChef = new this.web3.eth.Contract(MasterChefAbi)
     //this.masterKey = new this.web3.eth.Contract(MasterKeyAbi)

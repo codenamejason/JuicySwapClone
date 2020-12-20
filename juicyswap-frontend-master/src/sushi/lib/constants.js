@@ -488,7 +488,7 @@ export const contractAddresses = {
     4: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
   },
   xSushi: {
-    4: '0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272' // NOTE: Not in use
+    4: '0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86' // NOTE: Not in use yet
   }
 }
 
