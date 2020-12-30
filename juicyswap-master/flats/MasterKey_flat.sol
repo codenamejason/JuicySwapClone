@@ -1600,39 +1600,32 @@ contract CipherToken is ERC20("CipherToken", "CIPHER"), Ownable {
     }
 }
 
-// File: contracts\MasterChef.sol
+// File: contracts\MasterKey.sol
 
-pragma solidity 0.6.12;
-
-
-
-
-
-
-//import "./xCipherToken.sol";
+pragma solidity 0.6.12;
 
 
 interface IMigratorChef {
-    // Perform LP token migration from legacy UniswapV2 to Raw Cipher.
+    // Perform LP token migration from legacy UniswapV2 to cipherSwap.
     // Take the current LP token address and return the new LP token address.
     // Migrator should have full access to the caller's LP token.
     // Return the new LP token address.
     //
     // XXX Migrator must have allowance access to UniswapV2 LP tokens.
-    // Raw Cipher must mint EXACTLY the same amount of Raw Cipher LP tokens or
+    // cipherSwap must mint EXACTLY the same amount of cipherSwap LP tokens or
     // else something bad will happen. Traditional UniswapV2 does not
     // do that so be careful!
     function migrate(IERC20 token) external returns (IERC20);
 }
 
-// MasterChef is the master of Cipher. He can make Cipher and he is a fair guy.
+// MasterKey is the master of cipher. He can make cipher and he is a fair guy.
 //
 // Note that it's ownable and the owner wields tremendous power. The ownership
-// will be transferred to a governance smart contract once Cipher is sufficiently
+// will be transferred to a governance smart contract once cipher is sufficiently
 // distributed and the community can show to govern itself.
 //
 // Have fun reading it. Hopefully it's bug-free. God bless.
-contract MasterChef is Ownable {
+contract MasterKey is Ownable {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
@@ -1641,13 +1634,13 @@ contract MasterChef is Ownable {
         uint256 amount;     // How many LP tokens the user has provided.
         uint256 rewardDebt; // Reward debt. See explanation below.
         //
-        // We do some fancy math here. Basically, any point in time, the amount of Cipher's
+        // We do some fancy math here. Basically, any point in time, the amount of ciphers
         // entitled to a user but is pending to be distributed is:
         //
-        //   pending reward = (user.amount * pool.accCipherPerShare) - user.rewardDebt
+        //   pending reward = (user.amount * pool.acccipherPerShare) - user.rewardDebt
         //
         // Whenever a user deposits or withdraws LP tokens to a pool. Here's what happens:
-        //   1. The pool's `accCipherPerShare` (and `lastRewardBlock`) gets updated.
+        //   1. The pool's `acccipherPerShare` (and `lastRewardBlock`) gets updated.
         //   2. User receives the pending reward sent to his/her address.
         //   3. User's `amount` gets updated.
         //   4. User's `rewardDebt` gets updated.
@@ -1656,20 +1649,18 @@ contract MasterChef is Ownable {
     // Info of each pool.
     struct PoolInfo {
         IERC20 lpToken;           // Address of LP token contract.
-        uint256 allocPoint;       // How many allocation points assigned to this pool. Ciphers to distribute per block.
-        uint256 lastRewardBlock;  // Last block number that Ciphers distribution occurs.
-        uint256 accCipherPerShare; // Accumulated Ciphers per share, times 1e12. See below.
+        uint256 allocPoint;       // How many allocation points assigned to this pool. ciphers to distribute per block.
+        uint256 lastRewardBlock;  // Last block number that ciphers distribution occurs.
+        uint256 acccipherPerShare; // Accumulated ciphers per share, times 1e12. See below.
     }
 
-    // The Cipher TOKEN!
+    // The cipher TOKEN!
     CipherToken public cipher;
-    //xCipherToken public xcipher;
-
     // Dev address.
     address public devaddr;
-    // Block number when bonus Cipher period ends.
+    // Block number when bonus cipher period ends.
     uint256 public bonusEndBlock;
-    // Cipher tokens created per block.
+    // cipher tokens created per block.
     uint256 public cipherPerBlock;
     // Bonus muliplier for early cipher makers.
     uint256 public constant BONUS_MULTIPLIER = 5; // 500
@@ -1682,7 +1673,7 @@ contract MasterChef is Ownable {
     mapping (uint256 => mapping (address => UserInfo)) public userInfo;
     // Total allocation poitns. Must be the sum of all allocation points in all pools.
     uint256 public totalAllocPoint = 0;
-    // The block number when Cipher mining starts.
+    // The block number when cipher mining starts.
     uint256 public startBlock;
 
     event Deposit(address indexed user, uint256 indexed pid, uint256 amount);
@@ -1719,11 +1710,11 @@ contract MasterChef is Ownable {
             lpToken: _lpToken,
             allocPoint: _allocPoint,
             lastRewardBlock: lastRewardBlock,
-            accCipherPerShare: 0
+            acccipherPerShare: 0
         }));
     }
 
-    // Update the given pool's Cipher allocation point. Can only be called by the owner.
+    // Update the given pool's cipher allocation point. Can only be called by the owner.
     function set(uint256 _pid, uint256 _allocPoint, bool _withUpdate) public onlyOwner {
         if (_withUpdate) {
             massUpdatePools();
@@ -1762,22 +1753,22 @@ contract MasterChef is Ownable {
         }
     }
 
-    // View function to see pending Cipher's on frontend.
-    function pendingCipher(uint256 _pid, address _user)
+    // View function to see pending ciphers on frontend.
+    function pendingcipher(uint256 _pid, address _user)
         external
         view
         returns (uint256)
     {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][_user];
-        uint256 accCipherPerShare = pool.accCipherPerShare;
+        uint256 acccipherPerShare = pool.acccipherPerShare;
         uint256 lpSupply = pool.lpToken.balanceOf(address(this));
         if (block.number > pool.lastRewardBlock && lpSupply != 0) {
             uint256 multiplier = getMultiplier(pool.lastRewardBlock, block.number);
             uint256 cipherReward = multiplier.mul(cipherPerBlock).mul(pool.allocPoint).div(totalAllocPoint);
-            accCipherPerShare = accCipherPerShare.add(cipherReward.mul(1e12).div(lpSupply));
+            acccipherPerShare = acccipherPerShare.add(cipherReward.mul(1e12).div(lpSupply));
         }
-        return user.amount.mul(accCipherPerShare).div(1e12).sub(user.rewardDebt);
+        return user.amount.mul(acccipherPerShare).div(1e12).sub(user.rewardDebt);
     }
 
     // Update reward variables for all pools. Be careful of gas spending!
@@ -1803,30 +1794,30 @@ contract MasterChef is Ownable {
         uint256 cipherReward = multiplier.mul(cipherPerBlock).mul(pool.allocPoint).div(totalAllocPoint);
         cipher.mint(devaddr, cipherReward.div(10));
         cipher.mint(address(this), cipherReward);
-        pool.accCipherPerShare = pool.accCipherPerShare.add(cipherReward.mul(1e12).div(lpSupply));
+        pool.acccipherPerShare = pool.acccipherPerShare.add(cipherReward.mul(1e12).div(lpSupply));
         pool.lastRewardBlock = block.number;
     }
 
-    // Deposit LP tokens to MasterChef for cipher allocation.
+    // Deposit LP tokens to MasterKey for cipher allocation.
     function deposit(uint256 _pid, uint256 _amount) public {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
         updatePool(_pid);
         if (user.amount > 0) {
-            uint256 pending = user.amount.mul(pool.accCipherPerShare).div(1e12).sub(user.rewardDebt);
+            uint256 pending = user.amount.mul(pool.acccipherPerShare).div(1e12).sub(user.rewardDebt);
             if(pending > 0) {
-                safeCipherTransfer(msg.sender, pending);
+                safecipherTransfer(msg.sender, pending);
             }
         }
         if(_amount > 0) {
             pool.lpToken.safeTransferFrom(address(msg.sender), address(this), _amount);
             user.amount = user.amount.add(_amount);
         }
-        user.rewardDebt = user.amount.mul(pool.accCipherPerShare).div(1e12);
+        user.rewardDebt = user.amount.mul(pool.acccipherPerShare).div(1e12);
         emit Deposit(msg.sender, _pid, _amount);
     }
 
-    // Withdraw LP tokens from MasterChef.
+    // Withdraw LP tokens from MasterKey.
     function withdraw(uint256 _pid, uint256 _amount)
         public
     {
@@ -1834,15 +1825,15 @@ contract MasterChef is Ownable {
         UserInfo storage user = userInfo[_pid][msg.sender];
         require(user.amount >= _amount, "withdraw: not good");
         updatePool(_pid);
-        uint256 pending = user.amount.mul(pool.accCipherPerShare).div(1e12).sub(user.rewardDebt);
+        uint256 pending = user.amount.mul(pool.acccipherPerShare).div(1e12).sub(user.rewardDebt);
         if(pending > 0) {
-            safeCipherTransfer(msg.sender, pending);
+            safecipherTransfer(msg.sender, pending);
         }
         if(_amount > 0) {
             user.amount = user.amount.sub(_amount);
             pool.lpToken.safeTransfer(address(msg.sender), _amount);
         }
-        user.rewardDebt = user.amount.mul(pool.accCipherPerShare).div(1e12);
+        user.rewardDebt = user.amount.mul(pool.acccipherPerShare).div(1e12);
         emit Withdraw(msg.sender, _pid, _amount);
     }
 
@@ -1856,8 +1847,8 @@ contract MasterChef is Ownable {
         user.rewardDebt = 0;
     }
 
-    // Safe Cipher transfer function, just in case if rounding error causes pool to not have enough Cipher's.
-    function safeCipherTransfer(address _to, uint256 _amount) internal {
+    // Safe cipher transfer function, just in case if rounding error causes pool to not have enough ciphers.
+    function safecipherTransfer(address _to, uint256 _amount) internal {
         uint256 cipherBal = cipher.balanceOf(address(this));
         if (_amount > cipherBal) {
             cipher.transfer(_to, cipherBal);

@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/utils/EnumerableSet.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./CipherToken.sol";
+//import "./xCipherToken.sol";
 
 
 interface IMigratorChef {
@@ -59,6 +60,8 @@ contract MasterChef is Ownable {
 
     // The Cipher TOKEN!
     CipherToken public cipher;
+    //xCipherToken public xcipher;
+
     // Dev address.
     address public devaddr;
     // Block number when bonus Cipher period ends.

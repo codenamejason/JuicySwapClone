@@ -69,7 +69,7 @@ const StakeXSushi: React.FC = () => {
               ℹ️️ You will earn a portion of the swaps fees based on the amount
               of xCipher held relative the weight of the staking. xCipher can be minted
               by staking Cipher. To redeem Cipher staked plus swap fees convert xCipher
-              back to Cipher. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)} xSUSHI in the whole pool.` : '' }
+              back to Cipher. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)} xCIPHER in the whole pool.` : '' }
             </StyledInfo>
           </StyledCardWrapper>
         </StyledCardsWrapper>

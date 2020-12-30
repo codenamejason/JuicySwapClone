@@ -19,7 +19,7 @@ const TokenInput: React.FC<TokenInputProps> = ({
 }) => {
   return (
     <StyledTokenInput>
-      <StyledMaxText>{max.toLocaleString()} {symbol} Available</StyledMaxText>
+      <StyledMaxText>{max.toLocaleString()} {symbol} Balance</StyledMaxText>
       <Input
         endAdornment={(
           <StyledTokenAdornmentWrapper>

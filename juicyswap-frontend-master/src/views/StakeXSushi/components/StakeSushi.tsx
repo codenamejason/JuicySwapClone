@@ -59,7 +59,7 @@ const StakeSushi: React.FC<StakeProps> = ({}) => {
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>👨🏻‍🍳</CardIcon>
+            <CardIcon>C</CardIcon>
             <Value value={getBalanceNumber(tokenBalance)}/>
             <Label text={`CIPHER Tokens Available`}/>
           </StyledCardHeader>

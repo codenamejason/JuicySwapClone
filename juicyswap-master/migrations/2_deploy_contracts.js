@@ -1,11 +1,19 @@
 const CipherToken = artifacts.require('CipherToken.sol')
+const xCipherToken = artifacts.require('xCipherToken.sol')
 const MasterChef = artifacts.require('MasterChef.sol')
+
 //const GovernerAlpha = artifacts.require('GovernerAlpha.sol')
 
 module.exports = async function(deployer) {
   // Deploy Sushi Token
   await deployer.deploy(CipherToken)
   const cipherToken = await CipherToken.deployed()
+  cipherToken.mint('0xa0df350d2637096571F7A701CBc1C5fdE30dF76A', 10000000000)
+
+  // todo: getting error here...
+  await deployer.deploy(xCipherToken, cipherToken.address)
+  const xcipherToken = await xCipherToken.deployed()
+  //xcipherToken.mint('0xa0df350d2637096571F7A701CBc1C5fdE30dF76A', 10000000000)
 
   // await deployer.deploy(
   //   GovernerAlpha,
@@ -27,6 +35,7 @@ module.exports = async function(deployer) {
   // Make Masterchef contract token owner
   const masterChef = await MasterChef.deployed()
   await cipherToken.transferOwnership(masterChef.address)
+  //await xcipherToken.transferOwnership(masterChef.address)
 
   // Add Liquidity pool for rewards, e.g., "ETH/DAI Pool"
   await masterChef.add(
