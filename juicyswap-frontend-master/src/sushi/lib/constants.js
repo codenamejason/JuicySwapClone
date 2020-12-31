@@ -551,10 +551,10 @@ export const supportedPools = [
     {
       pid: 4,
       lpAddresses: {
-        4: '0x4bf35e6d954c9b86cdfa38e023238ce8c31d8cb4', // LP Token
+        4: '0xe0f67af2d9f4cd2b69de93fed2bbf731fa3a3e83', // LP Token
       },
       tokenAddresses: {
-        4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
+        4: '0x695883b08027B7dDaF2e299Ba932AD8A0CE099dE', // Token
       },
       name: 'Grape Ape',
       symbol: 'CIPHER-ETH LP',
