@@ -475,7 +475,7 @@ XX 11 YFI  0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28
 XX 12 SUSHI 0xCE84867c3c02B05dc570d0135103d3fB9CC19433
 */
 
-export const CHAIN_ID = 4
+export const CHAIN_ID = 4 // Rinkeby
 
 export const contractAddresses = {
   cipher: {
@@ -509,57 +509,57 @@ export const supportedPools = [
     tokenSymbol: 'DAI',
     icon: '🐱‍👤',
   },
+  // {
+  //   pid: 1,
+  //   lpAddresses: {
+  //     4: '0x5308a481B2b65F6086083D2268acb73AADC757E0', // LP Token Address
+  //   },
+  //   tokenAddresses: {
+  //     4: '0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02', // Token, i.e. "USDT"
+  //   },
+  //   name: 'Whales Only',
+  //   symbol: 'USDT-ETH LP',
+  //   tokenSymbol: 'USDT',
+  //   icon: '🐋',
+  // },
+  // {
+  //   pid: 2,
+  //   lpAddresses: {
+  //     4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', // LP Token
+  //   },
+  //   tokenAddresses: {
+  //     4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', // Token
+  //   },
+  //   name: 'Unicorn At Play',
+  //   symbol: 'UNI-ETH SLP',
+  //   tokenSymbol: 'UNI',
+  //   icon: '🦄',
+  //   },
+  // {
+  //   pid: 3,
+  //   lpAddresses: {
+  //     4: '0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA',// LP Token
+  //   },
+  //   tokenAddresses: {
+  //     4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
+  //   },
+  //   name: 'Link Marines',
+  //   symbol: 'LINK-ETH LP',
+  //   tokenSymbol: 'LINK',
+  //   icon: '🐱‍🐉',
+  // },
   {
-    pid: 1,
+    pid: 2,
     lpAddresses: {
-      4: '0x5308a481B2b65F6086083D2268acb73AADC757E0', // LP Token Address
+      4: '0xe0f67af2d9f4cd2b69de93fed2bbf731fa3a3e83', // LP Token
     },
     tokenAddresses: {
-      4: '0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02', // Token, i.e. "USDT"
+      4: '0x695883b08027B7dDaF2e299Ba932AD8A0CE099dE', // Token
     },
-    name: 'Whales Only',
-    symbol: 'USDT-ETH LP',
-    tokenSymbol: 'USDT',
-    icon: '🐋',
-  },
-  {
-      pid: 2,
-      lpAddresses: {
-        4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', // LP Token
-      },
-      tokenAddresses: {
-        4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', // Token
-      },
-      name: 'Unicorn At Play',
-      symbol: 'UNI-ETH SLP',
-      tokenSymbol: 'UNI',
-      icon: '🦄',
-    },
-    {
-      pid: 3,
-      lpAddresses: {
-        4: '0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA',// LP Token
-      },
-      tokenAddresses: {
-        4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
-      },
-      name: 'Link Marines',
-      symbol: 'LINK-ETH LP',
-      tokenSymbol: 'LINK',
-      icon: '🐱‍🐉',
-    },
-    {
-      pid: 4,
-      lpAddresses: {
-        4: '0xe0f67af2d9f4cd2b69de93fed2bbf731fa3a3e83', // LP Token
-      },
-      tokenAddresses: {
-        4: '0x695883b08027B7dDaF2e299Ba932AD8A0CE099dE', // Token
-      },
-      name: 'Grape Ape',
-      symbol: 'CIPHER-ETH LP',
-      tokenSymbol: 'CIPHER',
-      icon: '🍇',
+    name: 'Grape Ape',
+    symbol: 'CIPHER-ETH LP',
+    tokenSymbol: 'CIPHER',
+    icon: '🍇',
     },
     // {
     //   pid: 5,
