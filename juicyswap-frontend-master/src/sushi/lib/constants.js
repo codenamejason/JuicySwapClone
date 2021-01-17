@@ -509,45 +509,45 @@ export const supportedPools = [
     tokenSymbol: 'DAI',
     icon: '🐱‍👤',
   },
-  // {
-  //   pid: 1,
-  //   lpAddresses: {
-  //     4: '0x5308a481B2b65F6086083D2268acb73AADC757E0', // LP Token Address
-  //   },
-  //   tokenAddresses: {
-  //     4: '0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02', // Token, i.e. "USDT"
-  //   },
-  //   name: 'Whales Only',
-  //   symbol: 'USDT-ETH LP',
-  //   tokenSymbol: 'USDT',
-  //   icon: '🐋',
-  // },
-  // {
-  //   pid: 2,
-  //   lpAddresses: {
-  //     4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', // LP Token
-  //   },
-  //   tokenAddresses: {
-  //     4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', // Token
-  //   },
-  //   name: 'Unicorn At Play',
-  //   symbol: 'UNI-ETH SLP',
-  //   tokenSymbol: 'UNI',
-  //   icon: '🦄',
-  //   },
-  // {
-  //   pid: 3,
-  //   lpAddresses: {
-  //     4: '0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA',// LP Token
-  //   },
-  //   tokenAddresses: {
-  //     4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
-  //   },
-  //   name: 'Link Marines',
-  //   symbol: 'LINK-ETH LP',
-  //   tokenSymbol: 'LINK',
-  //   icon: '🐱‍🐉',
-  // },
+  {
+    pid: 5,
+    lpAddresses: {
+      4: '0x5308a481B2b65F6086083D2268acb73AADC757E0', // LP Token Address
+    },
+    tokenAddresses: {
+      4: '0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02', // Token, i.e. "USDT"
+    },
+    name: 'Whales Only',
+    symbol: 'USDT-ETH LP',
+    tokenSymbol: 'USDT',
+    icon: '🐋',
+  },
+  {
+    pid: 4,
+    lpAddresses: {
+      4: '0x4E99615101cCBB83A462dC4DE2bc1362EF1365e5', // LP Token
+    },
+    tokenAddresses: {
+      4: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', // Token
+    },
+    name: 'Unicorn At Play',
+    symbol: 'UNI-ETH SLP',
+    tokenSymbol: 'UNI',
+    icon: '🦄',
+    },
+  {
+    pid: 3,
+    lpAddresses: {
+      4: '0x0d1e5112B7Bf0595837f6e19A8233e8b918Ef3aA',// LP Token
+    },
+    tokenAddresses: {
+      4: '0x01BE23585060835E02B77ef475b0Cc51aA1e0709', // Token
+    },
+    name: 'Link Marines',
+    symbol: 'LINK-ETH LP',
+    tokenSymbol: 'LINK',
+    icon: '🐱‍🐉',
+  },
   {
     pid: 2,
     lpAddresses: {
@@ -561,19 +561,19 @@ export const supportedPools = [
     tokenSymbol: 'CIPHER',
     icon: '🍇',
     },
-    // {
-    //   pid: 5,
-    //   lpAddresses: {
-    //     4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
-    //   },
-    //   tokenAddresses: {
-    //     4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
-    //   },
-    //   name: 'CyberPunk 77',
-    //   symbol: 'CIPHER',
-    //   tokenSymbol: 'CIPHER',
-    //   icon: '🏍',
-    // }
+    {
+      pid: 6,
+      lpAddresses: {
+        4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
+      },
+      tokenAddresses: {
+        4: '0xe8c1F85BBE1f6Ca44ee7F6365249936Dec5E0CcB', // Token
+      },
+      name: 'CyberPunk 77',
+      symbol: 'CIPHER',
+      tokenSymbol: 'CIPHER',
+      icon: '🏍',
+    }
 ]
 
 // 0xB0fCB7a7b8c1f936254DB0AA48F27e724Be01e86

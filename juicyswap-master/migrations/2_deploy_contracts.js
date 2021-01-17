@@ -10,7 +10,6 @@ module.exports = async function(deployer) {
   const cipherToken = await CipherToken.deployed()
   //cipherToken.mint('0xa0df350d2637096571F7A701CBc1C5fdE30dF76A', 10000000000)
 
-  // todo: getting error here...
   await deployer.deploy(xCipherToken, cipherToken.address)
   const xcipherToken = await xCipherToken.deployed()
   //xcipherToken.mint('0xa0df350d2637096571F7A701CBc1C5fdE30dF76A', 10000000000)
